@@ -1,0 +1,181 @@
+body,
+html,
+* {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 12pt;
+}
+
+#title {
+  width: 100%;
+  height: 10em;
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 0.9em;
+  text-shadow: -5px 10px 20px rgba(0, 0, 0, 0.3);
+  animation: bounce 2s ease 1;
+}
+@keyframes bounce {
+  0% {
+    margin-top: -0.2em;
+  }
+  25% {
+    margin-top: 0.2em;
+  }
+  50% {
+    margin-top: -0.2em;
+  }
+  100% {
+    margin-top: 0em;
+  }
+}
+
+body {
+  background: linear-gradient(45deg, #e73c7e, #23a6d5);
+  background-size: 400% 400%;
+  animation: gradientBG 90s ease infinite;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 50% 25%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 25%;
+  }
+}
+
+/* login container */
+#loginContainer {
+  position: absolute;
+  top: 5em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 19em;
+  margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: -5px 10px 30px rgba(0, 0, 0, 0.2);
+  transition: 0.7s all ease-in-out;
+}
+#loginForm {
+  position: relative;
+  height: 15em;
+  width: 100%;
+  padding: 2em;
+  margin: auto;
+  margin-top: 24px;
+  opacity: 1;
+  overflow: hidden;
+  transition: 0.7s all ease-in-out;
+}
+/* signup container */
+#signupForm {
+  position: relative;
+  height: 0em;
+  width: 100%;
+  padding: 0em;
+  margin: auto;
+  margin-top: -240px;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.7s all ease-in-out;
+}
+/* login + signup contents */
+.input,
+.submit {
+  height: 3em;
+}
+.input {
+  background: #fff;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(45deg, #e73c7e, #23a6d5) 20% stretch;
+  padding: 1em;
+}
+.labels {
+  font-weight: bold;
+  background: #fff;
+  padding: 2px 5px 2px 5px;
+  height: auto;
+  width: auto;
+  color: #333;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: 15px;
+}
+.submit {
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.login-signup-title {
+  width: 80%;
+  height: 3em;
+  border: none;
+  position: absolute;
+  top: -300px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+}
+.login-signup-title:hover {
+  cursor: pointer;
+}
+.login-signup-title > span {
+  display: block;
+  width: 50%;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.signup-title {
+  float: right;
+  background: #fff;
+  transition: 0.3s all ease-in-out;
+}
+.login-title {
+  float: left;
+  background: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+/* JQUERY ANIMATION CSS */
+.translucent {
+  opacity: 0.4;
+  transition: 0.7s all ease-in-out;
+}
+
+.hide {
+  height: 0em !important;
+  opacity: 0 !important;
+  padding: 0em !important;
+  transition: opacity 0.5s, height 0.1s, padding 1s !important;
+}
+.reveal {
+  height: 20em !important;
+  opacity: 1 !important;
+  margin-top: -2px !important;
+  padding: 2em !important;
+  transition: opacity 1s, height 0.1s, padding 1s !important;
+}
+
+.extend {
+  height: 23em !important;
+  top: 9em !important;
+  transition: 0.7s all ease-in-out;
+}
